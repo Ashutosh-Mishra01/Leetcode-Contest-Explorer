@@ -22,7 +22,7 @@ const App = () => {
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [showSidebar, setShowSidebar] = useState(true);
+  const [showSidebar, setShowSidebar] = useState(false);
   const [hasFetched, setHasFetched] = useState(false);
 
   const fetchQuestions = async () => {
@@ -110,7 +110,7 @@ const App = () => {
           >
             <MenuIcon className="w-6 h-6" />
           </button>
-          <div className="flex items-center">
+          <div className="flex items-center justify-center ml-2">
             <Book className="w-6 h-6 mr-2 text-blue-500" />
             <h1 className="text-xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
               LeetCode Contest Explorer
@@ -128,7 +128,7 @@ const App = () => {
           } lg:translate-x-0 transition-transform duration-300 ease-in-out w-64 bg-gray-800 flex flex-col z-40`}
         >
           {/* Sidebar Header */}
-          <div className="p-4 border-b border-gray-700 mt-16 lg:mt-0">
+          <div className="p-4 border-b border-gray-700 mt-20 lg:mt-0">
             <h2 className="text-xl font-semibold text-blue-400">Topics</h2>
           </div>
           {/* Scrollable Topics Container */}
@@ -155,7 +155,7 @@ const App = () => {
 
         {/* Main Content */}
         <div onClick={() =>{ if(showSidebar) setShowSidebar(false)}} className="flex-1 overflow-y-auto custom-scrollbar">
-          <div className="container mx-auto px-4 py-8 mt-16 lg:mt-0">
+          <div className="container mx-auto sm:ml-12 px-4 py-8 mt-16 lg:mt-0">
             {/* Desktop Header */}
             <div className="hidden lg:flex items-center justify-center mb-12">
               <Book className="w-8 h-8 mr-3 text-blue-500" />
