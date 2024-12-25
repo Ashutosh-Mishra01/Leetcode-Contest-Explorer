@@ -31,7 +31,7 @@ const App = () => {
     setHasFetched(false);
   
     try {
-      const contestsResponse = await axios.post("http://localhost:5000/fetch-contests", {
+      const contestsResponse = await axios.post("https://leetcode-contest-explorer.vercel.app//fetch-contests", {
         topic,
         recentContests
       });
