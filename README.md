@@ -1,0 +1,2 @@
+#LeetCode Contest Explorer
+Description:This project is a personal tool designed to help users find questions from recent LeetCode contests based on a specific topic of their choice. With an intuitive interface, users can select or input a topic and specify the number of recent contests they wish to explore. The app then retrieves and displays a list of questions relevant to the selected topic, making it easier to focus on practicing targeted problem areas.
